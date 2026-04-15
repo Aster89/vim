@@ -4187,6 +4187,15 @@ did_set_mousehide(optset_T *args UNUSED)
 #endif
 
 /*
+ * Process the updated 'foobar' option value.
+ */
+    char *
+did_set_foobar(optset_T *args UNUSED)
+{
+    return NULL;
+}
+
+/*
  * Process the updated 'number' or 'relativenumber' option value.
  */
     char *

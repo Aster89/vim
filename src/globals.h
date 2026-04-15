@@ -1827,7 +1827,7 @@ extern cursorentry_T shape_table[SHAPE_IDX_COUNT];
 # define OPT_PRINT_JOBSPLIT	12
 # define OPT_PRINT_FORMFEED	13
 
-# define OPT_PRINT_NUM_OPTIONS	14
+# define OPT_PRINT_NUM_OPTIONS	15
 
 EXTERN option_table_T printer_opts[OPT_PRINT_NUM_OPTIONS]
 # ifdef DO_INIT
@@ -1839,6 +1839,7 @@ EXTERN option_table_T printer_opts[OPT_PRINT_NUM_OPTIONS]
 	{"header",	TRUE, 0, NULL, 0, FALSE},
 	{"syntax",	FALSE, 0, NULL, 0, FALSE},
 	{"number",	FALSE, 0, NULL, 0, FALSE},
+	{"foobar",	FALSE, 0, NULL, 0, FALSE},
 	{"wrap",	FALSE, 0, NULL, 0, FALSE},
 	{"duplex",	FALSE, 0, NULL, 0, FALSE},
 	{"portrait", FALSE, 0, NULL, 0, FALSE},

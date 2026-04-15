@@ -1889,6 +1889,10 @@ static struct vimoption options[] =
 			    (char_u *)VAR_WIN, PV_NU,
 			    did_set_number_relativenumber, NULL,
 			    {(char_u *)FALSE, (char_u *)0L} SCTX_INIT},
+    {"foobar",	    "foobar",P_BOOL|P_VI_DEF|P_RWIN,
+			    (char_u *)VAR_WIN, PV_NU,
+			    did_set_foobar, NULL,
+			    {(char_u *)FALSE, (char_u *)0L} SCTX_INIT},
     {"numberwidth", "nuw",  P_NUM|P_RWIN|P_VIM,
 #ifdef FEAT_LINEBREAK
 			    (char_u *)VAR_WIN, PV_NUW, did_set_numberwidth, NULL,
